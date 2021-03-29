@@ -1,0 +1,33 @@
+ //Switch Kitchen_Light "Kitchen Light" <energy> {channel = "mqtt:topic:MyMQTTBroker:Kitchen_Light:ChangeState"} 
+// //Number Bathroom_WashingMachine_Power "Power [%.0f W]" <energy> (gPower) {channel="homematic:..."}
+// //Number Livingroom_Temperature "Temperature [%.1f °C]" {channel="..." 
+// Number Temp "Temperature [%.1f C]" <temperature> {channel = "mqtt:topic:MyMQTTBroker:temperature:ChangeState"}
+
+ Switch config "Set Up"<garden>
+ Switch Thong_So_1 "Vân tay"<switch> {channel = "mqtt:topic:MyMQTTBroker:Configs:ChangeState_Vantay"}
+ Switch Thong_So_2 "RF_ID" <switch>  {channel = "mqtt:topic:MyMQTTBroker:Configs:ChangeState_RFID"}
+ Switch Thong_So_3 "mật Khẩu" <switch> {channel = "mqtt:topic:MyMQTTBroker:Configs:ChangeState_MatKhau"}
+ Switch door "Door 1" <frontdoor>{channel = "mqtt:topic:MyMQTTBroker:Configs:ChangeState_door"}
+
+
+ Switch Thong_So_cua_2_1 "Vân tay"<switch> 
+ Switch Thong_So_cua_2_2 "RF_ID" <switch>  
+ Switch Thong_So_cua_2_3 "mật Khẩu" <switch> 
+ Switch door_2 "Door 2" <frontdoor>
+
+
+
+
+
+
+
+
+
+
+
+
+
+// String Bedroom_Sonos_CurrentTitle "Title [%s]" (gBedRoom) {channel="sonos:..."}
+// Number Bathroom_WashingMachine_Power "Power [%.0f W]" <energy> (gPower) {channel="homematic:..."}
+
+//Number Livingroom_Temperature "Temperature [%.1f °C]" <temperature> (gTemperature, gLivingroom) ["TargetTemperature"] {knx="1/0/15+0/0/15"}

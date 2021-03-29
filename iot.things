@@ -1,0 +1,25 @@
+Bridge mqtt:broker:MyMQTTBroker [ host="localhost", secure=false, username="", password=""] {
+  Thing topic Configs "cai_dat" @ "nodeMCU" {
+    Channels:
+      Type switch : ChangeState_Vantay  [ stateTopic="vantay_state" , commandTopic="vantay_command", on="VAN_TAY_ON", off="VAN_TAY_OFF"]
+      Type switch : ChangeState_RFID    [ stateTopic="RFID_state" , commandTopic="RFID_command", on="RF_ID_ON", off="RF_ID_OFF"]
+      Type switch : ChangeState_MatKhau [ stateTopic="MatKhau_state" , commandTopic="MatKhau_command", on="MAT_KHAU_ON", off="MAT_KHAU_OFF"]
+      Type switch : ChangeState_door  [ stateTopic="door_state" , commandTopic="door_command", on="DOOR_ON", off="DOOR_OFF"]
+      
+      }
+
+  // Thing topic door "door" @ "nodeMCU" {
+  //   Channels:
+  //     Type switch : ChangeState_door  [ stateTopic="door_state" , commandTopic="door_command", on="DOOR_ON", off="DOOR_OFF"]
+  //     }
+}    
+     
+
+
+
+
+
+
+
+
+

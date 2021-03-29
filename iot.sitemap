@@ -1,0 +1,72 @@
+// sitemap iot label="My home automation" {
+//     // Frame label="Date" {
+//     //     Text item=Date
+//     //    // syntax tpye itemss=itemss_name
+//     // }
+//     // Frame label="Demo" {
+//     //     Switch itemss=Lights 
+//     //     Text itemss=LR_Temperature 
+//     //     Group itemss=Heating
+//     //     Text itemss=LR_Multimedia_Summary label="Multimedia [%s]" icon="video" {
+//     //         Selection itemss=LR_TV_Channel mappings=[0="off", 1="DasErste", 2="BBC One", 3="Cartoon Network"]
+//     //         Slider itemss=LR_TV_Volume
+//     //     }
+//     // }
+//     Frame label="iot" {
+//         // Switch item=Lights 
+//        // Switch item=Bathroom_WashingMachine_Power 
+//         Switch item=Kitchen_Light 
+        
+//     }
+//    Frame label="Monitor Panel" {
+//         Text item=Temperature
+//     }
+// }
+
+
+
+// sitemap iot label="My home automation" {
+//     Frame label="cài đặt thông số" {
+//         Group item=config {
+//            Switch  item=Thong_So_1 
+//            Switch  item=Thong_So_2
+//            Switch  item=Thong_So_3
+//         }
+        
+//     //     //Text item=Livingroom_Temperature
+//     // }
+//     Frame label="trạng thái tủ" {
+//         Switch item=door label="tủ 1"
+//         //Text item=Livingroom_Temperature
+//     }
+    
+//     }
+// }
+
+
+sitemap iot label="MY CABINET AUTOMATION" {
+  
+    Frame label="Cabinet 1" {
+        Switch  item=door 
+        Group item=config   {
+            Switch  item=Thong_So_1 
+            Switch  item=Thong_So_2 
+            Switch  item=Thong_So_3  
+        } 
+        
+    }
+    // Frame label="trạng thái " {
+    //     Switch  item=door  
+    // }
+     Frame label="cabinet 2" {
+        Switch  item=door_2 
+        Group item=config   {
+            Switch  item=Thong_So_cua_2_1 
+            Switch  item=Thong_So_cua_2_2
+            Switch  item=Thong_So_cua_2_3  
+        } 
+        
+    }
+   
+}
+
